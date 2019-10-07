@@ -1,0 +1,9 @@
+<launch>
+   <rosparam command="load" file="/home/wang_shuai/catkin_ws/src/RobsotRaceVisual/param/Green.yaml" ns="/color_select/Green"/>
+   <rosparam command="load" file="/home/wang_shuai/catkin_ws/src/RobsotRaceVisual/param/Red.yaml" ns="/color_select/Red"/>
+   <rosparam command="load" file="/home/wang_shuai/catkin_ws/src/RobsotRaceVisual/param/Blue.yaml" ns="/color_select/Blue"/>
+   <group ns= "Visual">
+   <node pkg="RobsotRaceVisual" type="visualnode" name="visualnode" output="screen"/>
+   </group>
+
+</launch>
